@@ -172,3 +172,52 @@ Data Manipulation Language statements: Read and modify data. These are also know
         IMMEDIATE;
 
 ```
+
+## Week 3: Intermediate SQL
+
+### Using string patterns and ranges
+
+1. String patterns:
+
+   Examples:
+
+   ```sql
+
+       WHERE column_name LIKE string_pattern
+
+   ```
+
+2. Range
+
+   Examples:
+
+   ```sql
+
+       WHERE pages between 290 and 300
+
+   ```
+
+3. Set of values
+
+   Examples:
+
+   ```sql
+       WHERE column_name in (set_of_values)
+   ```
+
+### Sorting results
+
+```sql
+    ORDER BY column_name
+    ORDER BY column_name desc
+    ORDER BY column_number
+
+```
+
+### Grouping results
+
+```sql
+
+    GROUP BY column_name
+    having condition
+```
