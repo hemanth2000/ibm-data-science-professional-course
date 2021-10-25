@@ -72,3 +72,27 @@ Restricts the number of rows of the query.
     Select * from MEDALS LIMIT 10
 
 ```
+
+### INSERT
+
+```SQL
+
+    INSERT INTO tablename
+
+        (column1, column2, column3,...)
+        VALUES
+        (val1,val2,val3,...)
+
+```
+
+### UPDATE & DELETE
+
+```SQL
+
+    UPDATE[TABLENAME]
+    SET[[ColumnName]=[Value]]
+    <WHERE[Condition]>
+
+    DELETE FROM [TABLENAME]
+        WHERE[CONDITION]
+```
