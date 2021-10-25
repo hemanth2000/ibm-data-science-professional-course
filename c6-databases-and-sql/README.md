@@ -31,7 +31,7 @@ There are mainly five basic SQL commands.
 
 A data manipulation language statement used to read and modify the data.
 
-_Syntax_
+**Syntax**
 
 ```SQL
 
@@ -39,5 +39,36 @@ _Syntax_
 
         WHERE predicate
 
+
+```
+
+### COUNT
+
+Counts the number of records in the database that satisfies the query.
+
+```SQL
+
+    Select COUNT(COUNTRY) from MEDALS
+
+        where COUNTRY = 'INDIA'
+```
+
+### DISTINCT
+
+Counts the number of distinct records in the database
+
+```SQL
+
+    Select DISTINCT columnnames from tablename
+
+```
+
+### LIMIT
+
+Restricts the number of rows of the query.
+
+```SQL
+
+    Select * from MEDALS LIMIT 10
 
 ```
