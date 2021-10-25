@@ -1,5 +1,7 @@
 # Databases and SQL for Data Science
 
+## Week 1: SQL Basics
+
 Main content:
 
 1. Learned about basics of SQL
@@ -95,4 +97,78 @@ Restricts the number of rows of the query.
 
     DELETE FROM [TABLENAME]
         WHERE[CONDITION]
+```
+
+## Week 2: RDB Concepts
+
+Advantages of Relational Databases:
+
+1. Data independence
+2. Entities are independent objects which have attributes
+3. Entities are mapped as rows in a table
+4. Attributes are mapped as columns
+5. A primary key uniquely identifies a specific row in a table.
+6. Common data types include characters, numbers, and dates/times.
+
+### Creating database instance on cloud
+
+Some of the cloud based RDB are:
+
+1. IBM Db2
+1. Databases for PostgreSQL
+1. Oracle Database Cloud Services
+1. Microsoft Azure SQL Database
+1. Amazon Relational Database Services (RDS) etc.
+
+### DDL vs DML statements
+
+Data Definition Language statements: Define, change, or drop tables(objects).
+
+    Common DDL operations: CREATE, ALTER, TRUNCATE
+
+Data Manipulation Language statements: Read and modify data. These are also known as CRUD operations.
+
+    Common DML operations: INSERT, SELECT, UPDATE, DELETE
+
+**DDL STATEMENTS:**
+
+### CREATE
+
+```SQL
+
+    CREATE TABLE table_name
+        (
+            column_name_1 datatype optional_parameters,
+            column_name_2 datatype,
+            ...
+            column_name_n datatype
+        )
+```
+
+### ALTER, TRUNCATE
+
+```SQL
+
+    ALTER TABLE table_name
+
+        ADD COLUMN column_name datatype
+
+
+    ALTER TABLE table_name
+
+        ADD COLUMN existing_column_name SET DATA TYPE
+
+    NEW_DATA_TYPE
+
+    ALTER TABLE table_name
+
+        DROP COLUMN existing_column_name
+
+
+    DROP TABLE table_name
+
+    TRUNCATE TABLE table_name
+
+        IMMEDIATE;
+
 ```
