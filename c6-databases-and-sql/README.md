@@ -26,3 +26,18 @@ There are mainly five basic SQL commands.
 1. Select
 1. Update
 1. Delete
+
+### Select Statement
+
+A data manipulation language statement used to read and modify the data.
+
+_Syntax_
+
+```SQL
+
+    Select * from <tablename>
+
+        WHERE predicate
+
+
+```
